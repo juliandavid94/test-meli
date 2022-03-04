@@ -1,0 +1,66 @@
+@import '../assets/css/styles.scss';
+
+body {
+    background-color: $background-gray-light;
+}
+
+.container {
+    text-align: justify;
+    margin: 0 15%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 196px 1fr 22%;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    background-color: $background-white;
+    position: relative;
+}
+
+.card:first-child {border-radius: 4px 4px 0 0!important;}
+
+.card:before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+    height: 1px;
+    width: 95%;
+    border-bottom: thin solid $background-gray-light;
+}
+
+.img{
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.products_card {
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+    text-align: center;
+}
+
+.address{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 11px;
+    color: $background-gray-heavy;
+}
+
+p {
+    margin-top: 0 !important;
+    margin-bottom: 32px !important;
+}
+
+.price_shipping {
+    font-size: 24px;
+}
+
+.title_item {
+    font-size: 18px;
+}

@@ -1,0 +1,11 @@
+@import '../assets/css/styles.scss';
+
+.bread {
+    margin: 16px 15%;
+    font-size: 14px;
+    color: $background-gray;
+}
+
+.bread:last-child {
+    font-weight: 600;
+}

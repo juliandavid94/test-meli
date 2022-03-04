@@ -1,0 +1,56 @@
+@import '../assets/css/styles.scss';
+
+.header_navbar{
+    background-color: $background-yellow;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.header_search{
+    margin: 0 15%;
+    display: grid;
+    grid-template-columns: 55px 1fr 35px;
+}
+
+.text {
+    width: -webkit-fill-available;
+    border: 1px solid $background-gray-light;
+    border-radius: 3px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.text:focus-visible {
+    outline: none;
+}
+
+.text::placeholder {
+    color: $background-gray;
+}
+
+.submit {
+    margin-left: -35px;
+    height: 25px;
+    width: 35px;
+    background: $background-gray;
+    color: $background-white;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.button_search {
+    appearance: none;
+    background: #eeeeee;
+    color: #fff;
+    border: 0;
+    padding: 9px;
+    border-radius: 0 5px 5px 0;
+    margin: 0;
+    height: 36px;
+    cursor: pointer;
+}
+
+.logo {
+    vertical-align: middle;
+    margin-right: 25px;
+}
