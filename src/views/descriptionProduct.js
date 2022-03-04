@@ -16,12 +16,11 @@ const DescriptionProduct = () => {
 
     const getDescriptionProduct = async() => {
         const data = await connection(id, 'description');
-        console.log(data)
+        console.log(data);
         if (!data.status) {
             setProductItems(data);
             setLoader(true);
         }
-        
     }
     return(loader &&
         <>

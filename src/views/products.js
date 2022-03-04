@@ -25,7 +25,7 @@ const Products = () => {
         
     }
     
-    console.log(dataProducts);
+    /* console.log(dataProducts); */
     return(loader && dataProducts.categories !== undefined &&
         <>
             <Breadcrumbs data = {dataProducts.categories}/>

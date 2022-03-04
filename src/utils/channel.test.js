@@ -7,6 +7,8 @@ true, "id": "MLA1115891412", "picture": "http://http2.mlstatic.com/D_795594-MLA4
 "good_quality_picture", "good_quality_thumbnail", "loyalty_discount_eligible", "immediate_payment", "best_seller_candidate", "meli_choice_candidate", "shipping_guaranteed"], "title": "Samsung Galaxy A12 64 Gb Negro 4 Gb Ram"}]}
 
 it("finds products items", async () => {
-  const response = await connection(10, "product");
-
+  const mockFetch = Promise.resolve({ json: () => Promise.resolve(data) });
+  global.fetch = jest.fn().mockImplementation(() => mockFetch);
+  const data_res = await connection(10, "product");
+  expect(data_res).toEqual(data);
 });

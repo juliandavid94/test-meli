@@ -9,7 +9,7 @@ jest.mock('react-router-dom', () => ({
             state: {},
             key: '',
             search: 'iphone',
-            hash: ''
+            hash: '',
         }
     }
 }));
