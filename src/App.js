@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
-import Search from './components/Search';
+import Search from './components/Search/Search';
 import Products from './views/products'
 import DescriptionProduct from './views/DescriptionProduct'
 

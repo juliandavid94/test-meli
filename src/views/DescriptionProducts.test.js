@@ -9,9 +9,8 @@ const data = {"author": {"lastname": "Rojas Ordoñez", "name": "Julian David"}, 
 describe("DescriptionProduct", () => {
     
     it('renders', async() => {
-        const data_res = await connection(10, "product")
+        await connection(10, "product")
         const {container} = render(<DescriptionProduct />);
         expect(container).toMatchSnapshot();
-        expect(data_res).toBeCalled();
     });
 });

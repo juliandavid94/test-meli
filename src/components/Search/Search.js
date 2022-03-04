@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import classes from './Search.module.scss';
-import iconSearch from '../assets/image/ic_Search.png';
-import logo from '../assets/image/Logo_ML.png';
-import { NavLink, useNavigate  } from 'react-router-dom';
+import iconSearch from '../../assets/image/ic_Search.png';
+import logo from '../../assets/image/Logo_ML.png';
+import { useNavigate  } from 'react-router-dom';
 
 const Search = () => {
     const [textValue, setTextValue] = useState('');

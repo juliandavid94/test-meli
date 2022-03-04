@@ -1,7 +1,7 @@
 import { Suspense, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import ListProducts from '../components/ListProducts';
-import Breadcrumbs from '../components/Breadcrumbs';
+import ListProducts from '../components/ListProducts/ListProducts';
+import Breadcrumbs from '../components/Breadcrumbs/Breadcrumbs';
 import Error from './error';
 import connection from '../utils/channel';
 
