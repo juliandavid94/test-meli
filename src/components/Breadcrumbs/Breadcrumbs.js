@@ -1,6 +1,14 @@
 import { useLocation } from 'react-router-dom';
 import classes from './Breadcrumbs.module.scss'
 
+/**
+ * Component to build the breadcrumb according to the search categories 
+ * @param categories Array - categories for the search products
+ * @param localStorage window params - store data for the search products
+ * @param URLSearchParams Object - Content information the search box
+ * @returns view render according breadcrumbs 
+ */
+
 const Breadcrumbs = (categories) => {
     const { search } = useLocation();
     let query = new URLSearchParams(search).get('search');

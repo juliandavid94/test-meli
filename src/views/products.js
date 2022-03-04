@@ -4,6 +4,11 @@ import ListProducts from '../components/ListProducts/ListProducts';
 import Breadcrumbs from '../components/Breadcrumbs/Breadcrumbs';
 import Error from './error';
 import connection from '../utils/channel';
+/**
+ * View for the product list
+ * @param URLSearchParams Object - Content information the search box
+ * @returns view rendering for the detail product with breadcrumbs component
+ */
 
 const Products = () => {
     let { search } = useLocation();
@@ -15,7 +20,10 @@ const Products = () => {
     useEffect(() => {
         searchProducts();
     }, [query]);
-
+    /**
+     * @param query String - Content information to the search box component
+     * @function searchProducts Return de api search for the list products
+     */
     const searchProducts = async () => {
         const data = await connection(query, 'product');
         if (!data.status) {
@@ -25,7 +33,6 @@ const Products = () => {
         
     }
     
-    /* console.log(dataProducts); */
     return(loader && dataProducts.categories !== undefined &&
         <>
             <Breadcrumbs data = {dataProducts.categories}/>
@@ -47,7 +54,6 @@ const Products = () => {
             </div>
         </>
     )
-    /* } */
 }
 
 export default Products

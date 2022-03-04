@@ -1,6 +1,11 @@
 import classes from './ListProducts.module.scss'
 import CurrencyFormat from 'react-currency-format';
 import { Link } from 'react-router-dom';
+/**
+ * Component to assembled de search list products
+ * @param {id, image, price, tittle, address, tags} params String Value for the principal view 
+ * @returns rendering view for the component product list
+ */
 
 const ListProducts = ({ id, image, price, tittle, address, tags}) => {
     return (

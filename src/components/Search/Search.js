@@ -3,11 +3,18 @@ import classes from './Search.module.scss';
 import iconSearch from '../../assets/image/ic_Search.png';
 import logo from '../../assets/image/Logo_ML.png';
 import { useNavigate  } from 'react-router-dom';
-
+/**
+ * Search box component  
+ * @returns view rendering for the search box
+ */
 const Search = () => {
     const [textValue, setTextValue] = useState('');
     let navigate = useNavigate();
-
+    /**
+     * 
+     * @param {*} event Event - behavior of submit functions
+     * @function handlerSubmit redirect view if conditional is true
+    */
     const handlerSubmit = (event) => {
         event.preventDefault();
         if (textValue) {
@@ -15,6 +22,11 @@ const Search = () => {
         }
     }
 
+    /**
+     * 
+     * @param {*} event Event - behavior of keyPress interactions
+     * @function handlerKeyPress control the event key press if conditional is 'Enter'
+     */
     const handlerKeyPress = (event) => {
         if (event.key === 'Enter') {
             handlerSubmit(event)

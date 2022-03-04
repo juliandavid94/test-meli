@@ -1,5 +1,12 @@
 import CurrencyFormat from 'react-currency-format';
 import classes from './DetailProduct.module.scss'
+
+/**
+ * Componente for product detail rendering
+ * @param data JSON - Content resultant information for the search api query  
+ * @returns rendering view for the component product detail
+ */
+
 const DetailProduct = (data) => {
     const imgSixe = data.data.img[0].size.split('x');
     const condition = data.data.condition.charAt(0).toUpperCase() + data.data.condition.slice(1);
