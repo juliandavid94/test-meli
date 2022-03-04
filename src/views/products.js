@@ -1,8 +1,9 @@
 import { Suspense, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import ListProducts from '../components/listProducts';
-import Breadcrumbs from '../components/breadcrumbs';
+import ListProducts from '../components/ListProducts';
+import Breadcrumbs from '../components/Breadcrumbs';
 import Error from './error';
+import connection from '../utils/channel';
 
 const Products = () => {
     let { search } = useLocation();
@@ -16,17 +17,11 @@ const Products = () => {
     }, [query]);
 
     const searchProducts = async () => {
-        await fetch(`http://localhost:3000/api/items/?q=${query}`)
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            if (!data.status) {
-                setDataProducts(data)
-                setLoader(true);
-            }
-        })
-        .catch((error) => console.log('aqui hay un error'));
+        const data = await connection(query, 'product');
+        if (!data.status) {
+            setDataProducts(data)
+            setLoader(true);
+        }
         
     }
     

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListProducts renders 1`] = `
+<div>
+  <a
+    class="card"
+    data-testid="link"
+    to="[object Object]"
+  >
+    <div
+      class="products_card"
+    >
+      <img
+        alt="loyalty_discount_eligible,good_quality_picture,good_quality_thumbnail,lightning_deal,immediate_payment,cart_eligible"
+        class="img"
+        src="http://http2.mlstatic.com/D_880330-MLA45465275430_042021-I.jpg"
+      />
+    </div>
+    <div>
+      <p
+        class="price_shipping"
+      >
+        <span>
+          $ 2,099
+        </span>
+      </p>
+      <span
+        class="title_item"
+      >
+        Teclado Gamer Vsg Pulsar Qwerty Español Latinoamérica Color Negro Con Luz Rgb
+      </span>
+    </div>
+    <div
+      class="address"
+    >
+      <span>
+        Capital Federal
+      </span>
+    </div>
+  </a>
+</div>
+`;

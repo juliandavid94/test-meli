@@ -1,7 +1,6 @@
 import CurrencyFormat from 'react-currency-format';
-import classes from './detailProduct.module.scss'
+import classes from './DetailProduct.module.scss'
 const DetailProduct = (data) => {
-    console.log(data);
     const imgSixe = data.data.img[0].size.split('x');
     const condition = data.data.condition.charAt(0).toUpperCase() + data.data.condition.slice(1);
     return (

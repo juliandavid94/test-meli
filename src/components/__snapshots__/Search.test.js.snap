@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search render 1`] = `
+<div>
+  <div
+    class="header_navbar"
+  >
+    <div
+      class="header_search"
+    >
+      <div>
+        <a
+          href="/"
+        >
+          <img
+            alt="Mercado Libre"
+            class="logo"
+            src="Logo_ML.png"
+          />
+        </a>
+      </div>
+      <div>
+        <input
+          class="text"
+          placeholder="Nunca dejes de buscar"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <button
+          class="button_search"
+        >
+          <img
+            alt="Mercado Libre"
+            src="ic_Search.png"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

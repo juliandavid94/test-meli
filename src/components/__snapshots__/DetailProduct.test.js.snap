@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailProduct renders 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <div
+      class="item_image"
+    >
+      <img
+        alt="loyalty_discount_eligible,good_quality_picture,good_quality_thumbnail,lightning_deal,immediate_payment,cart_eligible"
+        height="246"
+        src="http://http2.mlstatic.com/D_880330-MLA45465275430_042021-O.jpg"
+        width="500"
+      />
+    </div>
+    <div
+      class="info"
+    >
+      <div
+        class="condition"
+      >
+        New
+         - 
+        25
+         vendidos
+      </div>
+      <div
+        class="title"
+      >
+        Teclado Gamer Vsg Pulsar Qwerty Español Latinoamérica Color Negro Con Luz Rgb
+      </div>
+      <div
+        class="price"
+      >
+        <span>
+          $ 2,099
+        </span>
+      </div>
+      <button
+        class="button"
+      >
+        Comprar
+      </button>
+    </div>
+    <div
+      class="description"
+    >
+      <p
+        class="title_description"
+      >
+        Descripción del producto
+      </p>
+      <div
+        class="text_description"
+      >
+        Este teclado VSG de alto rendimiento permite que puedas disfrutar de horas ilimitadas de juegos. Está diseñado especialmente para que puedas expresar tanto tus habilidades como tu estilo. Podrás mejorar tu experiencia de gaming, ya seas un aficionado o todo un experto y hacer que tus jugadas alcancen otro nivel.
+
+Distinción a todo color
+Su retroiluminación le da un toque diferente a tu equipo y resalta su composición cuando es utilizado en espacios poco iluminados.
+
+Tecnología antighosting
+Este dispositivo tiene teclas antighosting. Esta cualidad es indispensable si requerís de un uso intensivo del periférico. Gracias a esto podrás evitar fallas al tocar varias teclas al mismo tiempo.
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import classes from './search.module.scss';
+import classes from './Search.module.scss';
 import iconSearch from '../assets/image/ic_Search.png';
 import logo from '../assets/image/Logo_ML.png';
 import { NavLink, useNavigate  } from 'react-router-dom';
@@ -19,13 +19,13 @@ const Search = () => {
         if (event.key === 'Enter') {
             handlerSubmit(event)
         }
-    } 
+    }
     return (
             
         <div className={classes.header_navbar}>
             <div className={classes.header_search}>
                 <div>
-                    <NavLink to={'/'}><img className={classes.logo} src={logo} alt="Mercado Libre"/></NavLink>
+                    <a href="/"><img className={classes.logo} src={logo} alt="Mercado Libre"/></a>
                 </div>
                 <div>
                     <input type="text" className={classes.text} placeholder="Nunca dejes de buscar" 

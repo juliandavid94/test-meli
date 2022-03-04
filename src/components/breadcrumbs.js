@@ -1,8 +1,8 @@
 import { useLocation } from 'react-router-dom';
-import classes from './breadcrumbs.module.scss'
+import classes from './Breadcrumbs.module.scss'
 
 const Breadcrumbs = (categories) => {
-    let { search } = useLocation();
+    const { search } = useLocation();
     let query = new URLSearchParams(search).get('search');
     if (localStorage.getItem('breadcrumbs')) {
         categories = JSON.parse(localStorage.getItem('breadcrumbs'));

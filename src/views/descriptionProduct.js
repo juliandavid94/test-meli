@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Breadcrumbs from "../components/breadcrumbs";
-import DetailProduct from "../components/detailProduct";
+import Breadcrumbs from "../components/Breadcrumbs";
+import DetailProduct from "../components/DetailProduct";
+import connection from "../utils/channel";
 import Error from "./error";
 
 const DescriptionProduct = () => {
@@ -14,17 +15,13 @@ const DescriptionProduct = () => {
     }, [id]);
 
     const getDescriptionProduct = async() => {
-        await fetch(`http://localhost:3000/api/items/${id}`)
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            if (!data.status) {
-                setProductItems(data);
-                setLoader(true);
-            }
-        })
-        .catch((error) => console.log(error));
+        const data = await connection(id, 'description');
+        console.log(data)
+        if (!data.status) {
+            setProductItems(data);
+            setLoader(true);
+        }
+        
     }
     return(loader &&
         <>

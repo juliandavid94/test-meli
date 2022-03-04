@@ -1,7 +1,6 @@
-import classes from './listProducts.module.scss'
+import classes from './ListProducts.module.scss'
 import CurrencyFormat from 'react-currency-format';
 import { Link } from 'react-router-dom';
-/* import iconSearch from '../assets/image/download.png'; */
 
 const ListProducts = ({ id, image, price, tittle, address, tags}) => {
     return (
